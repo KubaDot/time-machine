@@ -1,0 +1,19 @@
+<head>
+    <title>TimeMachine</title>
+</head>
+
+<body>
+
+    <h3>Fcking local time</h3>
+    <p>{{localTime}}</p>
+
+    <h3>Fcking server time</h3>
+    {{#each serverTime}}
+    {{> serverTimeTemplate}}
+    {{/each}}
+
+</body>
+
+<template name="serverTimeTemplate">
+    <p>{{value}}</p>
+</template>
